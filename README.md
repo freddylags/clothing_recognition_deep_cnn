@@ -71,6 +71,31 @@ Next, I will explore deeper architectures with BatchNorm and Dropout to further 
 - Stage 6: Visualise with Grad-CAM and build an interactive Gradio demo
 
 ---
+
+### Stage 3 – Model Tuning: Deep CNN with Dropout and BatchNorm
+
+Designed a deeper CNN architecture with improved regularisation techniques:
+- 3 × Conv2D blocks with ReLU activations and Batch Normalisation
+- MaxPooling layers for downsampling
+- Dropout layers (25% and 50%) to prevent overfitting
+- Fully connected layer with 128 units and softmax output
+
+**Training Setup**
+- Epochs: 10
+- Batch size: 64
+- Optimizer: Adam
+- Dataset: Fashion MNIST
+
+**Results**
+- Test Accuracy: **90.12%**
+- Test Loss: **0.2756**
+- Saved Model: `models/stage3_fashion_cnn_tuned.h5`
+- Training metrics visualised (accuracy/loss plots)
+
+**Reflection**
+This stage introduced deeper layers and improved generalisation through Dropout and BatchNorm. Test performance improved vs Stage 2, and the learning process was more stable overall.
+
+
 ## Requirements
 
 To install dependencies:

@@ -1,4 +1,3 @@
-
 # clothing_recognition_deep_cnn
 
 This project applies deep convolutional neural networks (CNNs) to the Fashion MNIST dataset for clothing item classification.  
@@ -10,6 +9,7 @@ It is developed in structured stages to improve generalisation, robustness, and 
 Alfred Ogunbayo – MSc AI
 
 Hugging Face: https://huggingface.co/alfred-ogunbayo
+GitHub: https://github.com/freddylags
 
 ## Dataset
 

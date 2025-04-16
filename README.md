@@ -1,17 +1,15 @@
 
-Deep CNN project for Fashion MNIST clothing classification using TensorFlow and Hugging Face tools.
-
 # clothing_recognition_deep_cnn
 
 This project applies deep convolutional neural networks (CNNs) to the Fashion MNIST dataset for clothing item classification.  
 It is developed in structured stages to improve generalisation, robustness, and model interpretability using TensorFlow and Hugging Face tools.
 
 ---
-### Author
+## Author
 
-### Alfred Ogunbayo – MSc AI
+Alfred Ogunbayo – MSc AI
 
-### Hugging Face: https://huggingface.co/alfred-ogunbayo
+Hugging Face: https://huggingface.co/alfred-ogunbayo
 
 ## Dataset
 

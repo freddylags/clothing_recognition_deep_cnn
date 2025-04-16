@@ -42,7 +42,35 @@ Next, I will introduce L1 regularisation and cross-validation to reduce potentia
 - **Stage 6:** Visualize with Grad-CAM and build an interactive Gradio demo
 
 ---
+### Stage 2 – L1 Regularised CNN with K-Fold Validation (Completed)
 
+- Applied L1 weight regularisation to convolutional layers  
+- Used 5-fold cross-validation to estimate generalisation performance  
+- Tracked accuracy and loss across all folds  
+- Automatically saved the best model (based on validation accuracy)
+
+**Metrics:**
+- Best Model Fold: Fold 2  
+- Best Validation Accuracy: 89.33%  
+- Average Accuracy Across Folds: 88.75%  
+- Standard Deviation: ±0.0031  
+- Saved Model: `models/stage2_fashion_cnn_best_l1.h5`
+
+**Reflection:**  
+This stage improved robustness by validating across multiple folds and applying L1 regularisation to reduce overfitting.  
+The improvement in validation accuracy and the low standard deviation show stable, consistent performance across data splits.  
+Next, I will explore deeper architectures with BatchNorm and Dropout to further improve performance.
+
+---
+
+## Upcoming Stages
+
+- Stage 3: Introduce deeper CNNs with Dropout and BatchNorm  
+- Stage 4: Apply Transfer Learning using pretrained models (EfficientNet, ResNet)  
+- Stage 5: Publish model and metrics to Hugging Face Hub  
+- Stage 6: Visualise with Grad-CAM and build an interactive Gradio demo
+
+---
 ## Requirements
 
 To install dependencies:

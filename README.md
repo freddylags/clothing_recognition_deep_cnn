@@ -1,6 +1,6 @@
 # clothing_recognition_deep_cnn
 
-This project applies deep convolutional neural networks (CNNs) to the Fashion MNIST dataset for clothing item classification.  
+This project applies deep convolutional neural networks (CNNS) to the Fashion MNIST dataset for clothing item classification.  
 It is developed in structured stages to improve generalisation, robustness, and model interpretability using TensorFlow and Hugging Face tools.
 
 ---
@@ -21,14 +21,14 @@ Fashion MNIST:
 ## Stage Progress
 
 ### Stage 1 – Baseline CNN (Completed)
-- 2 convolutional layers with ReLU + MaxPooling
+- 2 convolutional layers with Relu + MaxPooling
 - Fully connected layers: 64 units + softmax output
 - Validation set used during training
 - **Test Accuracy:** 90.38%
 - **Saved model:** `models/stage1_fashion_cnn.h5`
 
 **Reflection:**  
-This baseline CNN performs well, but leaves room for improvement in generalization and regularization.  
+This baseline CNN performs well, but leaves room for improvement in generalisation and regularisation.  
 Next, I will introduce L1 regularisation and cross-validation to reduce potential overfitting and assess performance robustness.
 
 ---
@@ -36,10 +36,10 @@ Next, I will introduce L1 regularisation and cross-validation to reduce potentia
 ## Upcoming Stages
 
 - **Stage 2:** Add L1 Regularisation and K-Fold Cross-Validation
-- **Stage 3:** Introduce deeper CNNs with Dropout and BatchNorm
+- **Stage 3:** Introduce deeper CNNS with Dropout and BatchNorm
 - **Stage 4:** Apply Transfer Learning using pretrained models (EfficientNet, ResNet)
 - **Stage 5:** Publish model + metrics to Hugging Face Hub
-- **Stage 6:** Visualize with Grad-CAM and build an interactive Gradio demo
+- **Stage 6:** Visualise with Grad-CAM and build an interactive Gradio demo
 
 ---
 ### Stage 2 – L1 Regularised CNN with K-Fold Validation (Completed)
@@ -65,7 +65,7 @@ Next, I will explore deeper architectures with BatchNorm and Dropout to further 
 
 ## Upcoming Stages
 
-- Stage 3: Introduce deeper CNNs with Dropout and BatchNorm  
+- Stage 3: Introduce deeper CNNS with Dropout and BatchNorm  
 - Stage 4: Apply Transfer Learning using pretrained models (EfficientNet, ResNet)  
 - Stage 5: Publish model and metrics to Hugging Face Hub  
 - Stage 6: Visualise with Grad-CAM and build an interactive Gradio demo
@@ -75,7 +75,7 @@ Next, I will explore deeper architectures with BatchNorm and Dropout to further 
 ### Stage 3 – Model Tuning: Deep CNN with Dropout and BatchNorm
 
 Designed a deeper CNN architecture with improved regularisation techniques:
-- 3 × Conv2D blocks with ReLU activations and Batch Normalisation
+- 3 × Conv2d blocks with Relu activations and Batch Normalisation
 - MaxPooling layers for downsampling
 - Dropout layers (25% and 50%) to prevent overfitting
 - Fully connected layer with 128 units and softmax output
@@ -83,7 +83,7 @@ Designed a deeper CNN architecture with improved regularisation techniques:
 **Training Setup**
 - Epochs: 10
 - Batch size: 64
-- Optimizer: Adam
+- Optimiser: Adam
 - Dataset: Fashion MNIST
 
 **Results**
@@ -97,17 +97,20 @@ This stage introduced deeper layers and improved generalisation through Dropout 
 
 ---
 
-## Stage 6 – Model Visualisation & Explainability (Grad-CAM)
+### Stage 6 – Visualisation and Explainability
 
-- Applied Grad-CAM to interpret CNN attention on Fashion MNIST test images
-- Visualised model focus for predicted classes (e.g. Sneaker, Shirt)
-- Saved overlay heatmaps showing pixel importance
+- I applied **Grad-CAM** to the final CNN model to interpret the importance of features.
+- Generated heat maps are overlaid on the original images.
+- Produced 5 visual samples using test data for different clothing categories.
+- Visualisation results saved in `gradcam_outputs/` and committed for reproducibility.
 
+**Reflection:**
+This final stage provides transparency into the CNN’s decision-making by visualising where the model focuses its attention. These insights help improve trust, explainability, and future model debugging.
 
 ---
 
 ## Upcoming:
-- Deploy Gradio web app to Hugging Face Spaces
+- Deploy the Gradio web app to Hugging Face Spaces
 - Enable image upload + live Grad-CAM generation
 
 ## Requirements

@@ -95,6 +95,20 @@ Designed a deeper CNN architecture with improved regularisation techniques:
 **Reflection**
 This stage introduced deeper layers and improved generalisation through Dropout and BatchNorm. Test performance improved vs Stage 2, and the learning process was more stable overall.
 
+---
+
+## Stage 6 – Model Visualisation & Explainability (Grad-CAM)
+
+- Applied Grad-CAM to interpret CNN attention on Fashion MNIST test images
+- Visualised model focus for predicted classes (e.g. Sneaker, Shirt)
+- Saved overlay heatmaps showing pixel importance
+
+
+---
+
+## Upcoming:
+- Deploy Gradio web app to Hugging Face Spaces
+- Enable image upload + live Grad-CAM generation
 
 ## Requirements
 

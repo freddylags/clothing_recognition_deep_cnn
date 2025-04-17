@@ -113,6 +113,22 @@ This final stage provides transparency into the CNN’s decision-making by visua
 - Deploy the Gradio web app to Hugging Face Spaces
 - Enable image upload + live Grad-CAM generation
 
+- ## New Model for Gradio + Grad-CAM (clothing_recognition_deep_cnn_gradio_modelbuilder.h5)
+
+This model was built explicitly to support:
+
+- **Grad-CAM visualisation** via `model.input` and `model.output`
+- **Gradio web app integration** for image uploads and heatmap explanation
+- Full compatibility with Hugging Face Space deployment
+
+Unlike previous models, which were saved via `Sequential` wrappers, this version was rebuilt using the Functional API to guarantee access to internal layers. This allows clear mapping between input pixels and learned features for interpretability.
+
+### Why this model was added:
+> Previous saved models (`stage3_fashion_cnn_tuned.h5`) could not be used with Grad-CAM or deployed via Gradio due to missing `.input` and `.output` references. This new version fixes that.
+
+**File:** `models/clothing_recognition_deep_cnn_gradio_modelbuilder.h5`  
+**Notebook:** `notebooks/clothing_recognition_deep_cnn_gradio_modelbuilder.ipynb`
+
 ## Requirements
 
 To install dependencies:

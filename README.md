@@ -1,3 +1,12 @@
+## 🔗 Live Gradio Demo
+
+Check out the full interactive demo here:  
+**[Fashion Classifier + Grad-CAM – Live App](https://huggingface.co/spaces/alfred-ogunbayo/fashion-mnist-gradio-demo-app)**
+
+Upload any fashion image (T-shirt, Dress, Sneaker, etc.) and see:
+- Predicted class (Top-3)
+- Grad-CAM explanation of what part of the image influenced the model
+
 # clothing_recognition_deep_cnn
 
 This project applies deep convolutional neural networks (CNNS) to the Fashion MNIST dataset for clothing item classification.  
